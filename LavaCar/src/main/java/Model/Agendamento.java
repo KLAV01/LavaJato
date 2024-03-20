@@ -19,8 +19,8 @@ public class Agendamento {
     private Date data;
     private String observacao;
 
-    public Agendamento(int Id, Cliente cliente, Servico servico, float valor, String data) {
-        this.Id = Id;
+    public Agendamento(Cliente cliente, Servico servico, float valor, String data) {
+        this.Id = 0;
         this.cliente = cliente;
         this.servico = servico;
         this.valor = valor;
@@ -31,8 +31,8 @@ public class Agendamento {
         }
     }
 
-    public Agendamento(int Id, Cliente cliente, Servico servico, float valor, String data, String observacao) {
-        this(Id, cliente, servico, valor, data);
+    public Agendamento(Cliente cliente, Servico servico, float valor, String data, String observacao) {
+    	this(cliente, servico, valor, data);
         this.observacao = observacao;
     }
     

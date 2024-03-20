@@ -2,6 +2,7 @@ package View;
 
 import static java.lang.String.valueOf;
 
+import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
@@ -16,6 +17,8 @@ public class ClienteView extends javax.swing.JFrame {
 	
    
     public ClienteView() {
+    	setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/View/icones/car.png")));
+    	setTitle("LavaJato - AutoBrilho");
         initComponents();
         this.controlador = new ClienteCadastroControlador(this);
         iniciar();

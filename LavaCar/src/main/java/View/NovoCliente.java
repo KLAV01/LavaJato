@@ -1,5 +1,6 @@
 package View;
 import java.awt.Color;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
@@ -10,6 +11,8 @@ import Model.DAO.ClienteDAO;
 public class NovoCliente extends javax.swing.JFrame {
 
 	public NovoCliente() {
+    	setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/View/icones/car.png")));
+    	setTitle("LavaJato - AutoBrilho");
         initComponents();
     }
 

@@ -26,14 +26,14 @@ public class Banco {
         //criando elementos
         Usuario usuario1 = new Usuario(1, "Deyvid", 'M', "05/03/1999", "75988439017", "deyvid_nogueira@hotmail.com", "07336928501", "123123", "administrador");
         Usuario usuario2 = new Usuario(2, "Luan", 'M', "09/05/1996", "30212122", "estagiario@barbershop.com", "451244123", "321321", "funcionario");
-        Usuario usuario3 = new Usuario(3, "klav", 'M', "01/01/2000", "75987654321", "klav@gmail.com", "11122233344", "1234", "administrador");
+        Usuario usuario3 = new Usuario(3, "klav", 'M', "01/01/2000", "75987654321", "klav@gmail.com", "11122233344", "123", "administrador");
          
         Cliente cliente1 = new Cliente(1, "Luan Queiroz", 'M', "30/01/1995", "30212126", "tiagoluz.h607@gmail.com", "5142487", "Rua jaboti 35 Canudos NH",  "93300012");
         Cliente cliente2 = new Cliente(2, "Deyvid Nogueira", 'F', "30/08/1994", "30212127", "juditeoliveirapet@gmail.com", "5142487745", "Rua campo bom 78 Centro NH",  "93300045");
         Cliente cliente3 = new Cliente(3, "Nathan Rodriguez", 'M', "24/04/1997", "30212128", "pauloricardopet@gmail.com", "78451458", "Rua Tres Irmaos 30 Vila Nova - NH",  "933007496");
         Cliente cliente4 = new Cliente(4, "Alison Felipe", 'M', "20/08/1995", "30212130", "neymarsantospet@gmail.com", "2745487", "Rua Lombardi 40 Canudos NH",  "93300748");
         Cliente cliente5 = new Cliente(5, "João Victor", 'M', "13/09/1992", "30212131", "debruinepet@gmail.com", "4742487", "Rua pedro quaresma 784 Canudos Belgica",  "933000847");
-        Cliente cliente6 = new Cliente(6, "João Guilherme", 'M', "17/08/1994", "302122324", "matuidipet@gmail.com", "78512457", "Rua champions 10 Kephas Franca",  "933000782");
+        Cliente cliente6 = new Cliente(6, "Kaique Luan", 'M', "17/08/1994", "302122324", "matuidipet@gmail.com", "78512457", "Rua champions 10 Kephas Franca",  "933000782");
         
         Servico servico1 = new Servico(1, "LAVAGEM SIMPLES - CARRO", 40);
         Servico servico2 = new Servico(2, "LAVAGEM DETALHADA - CARRO", 100);
@@ -45,9 +45,9 @@ public class Banco {
         Servico servico8 = new Servico( 8 , "LAVAGEM DETALHADA - MOTO ", 50);
         Servico servico9 = new Servico( 9 , "LAVAGEM PREMIUM - MOTO ", 100);
         
-        Agendamento agendamento1 = new Agendamento(1, cliente1, servico2, 30, "14/02/2024 09:30");
-        Agendamento agendamento2 = new Agendamento(2, cliente3, servico4, 40, "14/02/2024 10:00");
-        Agendamento agendamento3 = new Agendamento(3, cliente4, servico1, 18, "14/02/2024 10:30");
+        Agendamento agendamento1 = new Agendamento(cliente1, servico2, 30, "14/02/2024 09:30");
+        Agendamento agendamento2 = new Agendamento(cliente3, servico4, 40, "14/02/2024 10:00");
+        Agendamento agendamento3 = new Agendamento(cliente4, servico1, 18, "14/02/2024 10:30");
         
         //Adiciona Elementos na lista
         usuario.add(usuario1);

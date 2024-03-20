@@ -23,7 +23,7 @@ public class AgendaHelper implements IHelper {
 		tableModel.setNumRows(0);
 		for (Agendamento agendamento : agendamentos) {
 			tableModel.addRow(new Object[] { 
-					agendamento.getId(), 
+//					agendamento.getId(), 
 					agendamento.getCliente().getNome(),
 					agendamento.getServico().getDescricao(), 
 					agendamento.getValor(), 
@@ -62,8 +62,8 @@ public class AgendaHelper implements IHelper {
 
 	@Override
 	public Object obterModelo() {
-		String idString = view.getTextId().getText();
-		int id = Integer.parseInt(idString);
+//		String idString = view.getTextId().getText();
+//		int id = Integer.parseInt(idString);
 		Cliente cliente = (Cliente) view.getjComboBoxCliente().getSelectedItem();
 		Servico servico = (Servico) view.getjComboBoxServico().getSelectedItem();
 		String valorString = view.getTextValor().getText();
@@ -73,13 +73,13 @@ public class AgendaHelper implements IHelper {
 		String dataHora = data + " " + hora;
 		String observacao = view.getTextObservacao().getText();
 
-		Agendamento agendamento = new Agendamento(id, cliente, servico, valor, dataHora, observacao);
+		Agendamento agendamento = new Agendamento(cliente, servico, valor, dataHora, observacao);
 		return agendamento;
 	}
 
 	@Override
 	public void limparTela() {
-		view.getTextId().setText("0");
+//		view.getTextId().setText("0");
 		view.getTextFormatedData().setText("");
 		view.getTextFormatedHora().setText("");
 		view.getTextObservacao().setText("");
